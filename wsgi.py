@@ -5,6 +5,7 @@ import os
 # Below for testing only
 #
 if __name__ == '__main__':
+    print('wsgi main')
     ip = 'localhost'
     port = 8059
 
