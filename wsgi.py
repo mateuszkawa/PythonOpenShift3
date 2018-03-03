@@ -18,5 +18,5 @@ if __name__ == '__main__':
 
     application = tornado.web.Application(handlers, **settings)
     application.listen(port)
-    print(f'Service listen on {port}')
+    print('Service listen on %s' % port)
     tornado.ioloop.IOLoop.instance().start()
