@@ -26,8 +26,8 @@ else:
           'template_path' : os.path.join(os.getcwd(), 'wsgi/templates'),
      }
 
-port = int(os.environ.get('OPENSHIFT_PYTHON_PORT', '8000'))
-ip = os.environ.get('OPENSHIFT_PYTHON_IP', 'localhost')
+port = int(os.environ.get('OPENSHIFT_PYTHON_PORT', '8080'))
+ip = os.environ.get('OPENSHIFT_PYTHON_IP', '0.0.0.0')
 
 if __name__ == '__main__':
      application = tornado.web.Application(handlers, **settings)
