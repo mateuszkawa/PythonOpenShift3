@@ -9,7 +9,7 @@ if __name__ == '__main__':
     ip = 'localhost'
     port = 8059
 
-    from wsgi.openshift import handlers
+    from app.openshift import handlers
     import tornado.web
 
     settings = {

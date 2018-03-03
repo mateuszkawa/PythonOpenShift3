@@ -12,9 +12,8 @@ if 'OPENSHIFT_REPO_DIR' in os.environ:
      except IOError:
          pass
 
-import tornado.ioloop
 import tornado.web
-from wsgi.openshift import handlers
+from app.openshift import handlers
 
 if 'OPENSHIFT_REPO_DIR' in os.environ:
      settings = {
