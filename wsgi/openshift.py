@@ -6,7 +6,7 @@ from tornado import gen
 from tornado.web import asynchronous
 
 
-class SearchHandler(tornado.web.RequestHandler):
+class RootHandler(tornado.web.RequestHandler):
     client = tornado.httpclient.AsyncHTTPClient()
 
     @gen.engine
@@ -14,4 +14,4 @@ class SearchHandler(tornado.web.RequestHandler):
         self.finish({'text': "Hello World"})
 
 
-handlers = [(r'/searchs', SearchHandler), ]
+handlers = [(r'/', RootHandler), ]
